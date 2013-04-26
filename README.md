@@ -18,6 +18,6 @@ Invocation
 ==========
 
     # Check that Logstash has received logs from somehost within past 10 minutes
-    ./check_logstash_freshness -c 0:900 -w 0:600 -p logstash \
+    ./check_logstash_freshness.py -c 0:900 -w 0:600 -p logstash \
         -u http://logstash:9200 -q '@source:somehost'
 
